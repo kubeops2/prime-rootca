@@ -6,7 +6,8 @@ Prime rootCA.pem 파일을 제공하는 Git Repo 입니다.
 <br>
 
 Prime 의 Certificates 파일들은, 이 공개된 rootCA.pem 파일의 비밀키로 서명하여 만들어 집니다.  
-하여, 서비스에 접근하는 랩탑이나, 외부에 Endpoint 에서 Prime rootCA 로 만들어진 Certificate 을 신뢰하도록 설정하기 위해 배포 합니다.
+하여, Prime 에 구성된 서비스에 접근하는 랩탑이나, 다른 접근하는 Endpoint 의 Machine 은 Prime rootCA 로 만들어진 Certificate 을 신뢰하도록 설정하기 위해  
+이 rootCA.pem 공개키를 신뢰 하도록 구성되어 져야 합니다.
 
 <br>
 
