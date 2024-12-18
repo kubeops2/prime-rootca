@@ -38,9 +38,14 @@ mkcert 설치 방법은 OS 에 따라 다양 합니다.
 ### 1. curl 명령으로 rootCA 파일을 가져와서 mkcert 로 Trust 를 구성합니다.
 
 ```bash
-$ curl -sSL -O https://raw.githubusercontent.com/kubeops2/prime-rootca/main/rootCA.pem && CAROOT=. mkcert -install
+curl -sSL -O https://raw.githubusercontent.com/kubeops2/prime-rootca/main/rootCA.pem && CAROOT=. mkcert -install
 
-The local CA is already installed in the system trust store! 👍
+```
+<br>
+
+그럼 다음과 같은 메시지를 볼 수 있습니다.
+```bash
+The local CA is installed in the system trust store! 👍
 ```
 
 
