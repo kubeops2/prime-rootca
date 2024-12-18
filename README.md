@@ -18,6 +18,17 @@ Prime 의 Certificates 파일들은, 이 공개된 rootCA.pem 파일의 비밀�
 
 <br><br>
 
+### 이 rootCA 를 신뢰하면 어떻게 되나요?
+
+Prime 에서 생성하는 서비스들의 Ingress 들은 모두 TLS 가 구성되어 있습니다.
+기본 Prime 구성에 사용되는 rootCA 는 Self-singed 이므로, 당연히 웹브라우져 접근 시 `Warning` 메시지가 뜹니다.  
+
+<br>
+
+별도의 certificates 구성 없이 기본 prime 설치 시 생성되는 모든 `K8s Ingress` 에 접근 하기 위해서 Prime 의 rootCA 공개키를 신뢰 해주셔야 합니다.
+
+<br><br>
+
 ## Requirements
 
 | Tools | Desc |
